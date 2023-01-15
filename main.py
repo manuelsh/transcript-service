@@ -20,6 +20,6 @@ app.add_middleware(
 @app.post("/files/")
 async def create_file(file: bytes = File()):
     transcribed = transcribe(file)
-    # Checks that file is a sound file
+    # TODO: Checks that file is a sound file
 
     return transcribed #{"file_size": len(file)}

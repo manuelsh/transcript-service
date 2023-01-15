@@ -1,2 +1,4 @@
 keys.py
 *.mp3
+access_logs
+error_logs
